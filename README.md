@@ -17,9 +17,9 @@ The output of the program:
 * Output files of the clusters so that it can be used in other tools like ProM, Disco
 
 How to use the program:
-* Install an IDE for Java, e.g. NetBeans
+* Install an IDE for Java, e.g. NetBeans. The files are in branch source.
 * Create a project and add the Java Classes in one directory
-* Put the import files into an Import Directory - there are several files with a certain number of cases.
+* Put the import files into an Import Directory - there are several files with a certain number of cases. The files are in branch import files.
 * Create an export directory
 * Main is in GED - you must change some parameters at the beginning of the program, e.g. the import en export directories
 * Run Main 
