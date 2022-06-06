@@ -1,12 +1,11 @@
-This code is part of my thesis. It investigates an eventlog with cases. Each case can be seen as an instance of a proces.
+(This code is part of my thesis)
 
-The cases seems te be very different (spagetti). So we developed an program to cluster the cases. To create clusters we need to know the distance between each proces. 
-We used serveral method for the distance:
+The event log (PSED II) has a large number of distinct cases and unstrucuted behavior, creating spaghetti model. In order to increase the comprehensibility of process mining results, clusteringg can be performed. For this, a program has been developed. In order to cluster, a distance between cases is required. Several methods have been used for this:
   * Graph Edit Distance - based on creating a cost matrix and with the Hungarioan algoritmn find the optimal costs - the code comes from a public library
-  * Levenhstein Distance -  this method was found in a public library
-  * Distance of a Graph based on the structure.
+  * Levenhstein Distance -  this code was also found in a public library
+  * Distance of a Graph based on the structure
 
-The clustering algoritmn is based on hierachical clustering.
+The clustering algoritmn is based on agglomerative hierachical clustering.
 
 The output of the program:
 * A similarity distribution
@@ -23,8 +22,3 @@ How to use the program:
 * Create an export directory
 * Main is in GED - you must change some parameters at the beginning of the program, e.g. the import en export directories
 * Run Main 
-
-The final result:
-*  The average similarity is very low, for all 3 used distance methods
-*  After clustering the average similarity is a tiny bit higher but still very low.
-*  It seems that the cases in the event log are so different that a common succes or failure proces cannot be found in the data.
